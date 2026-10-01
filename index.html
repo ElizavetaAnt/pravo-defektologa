@@ -432,6 +432,20 @@ footer{max-width:1240px;margin:0 auto;padding:0 16px 60px;color:var(--muted);fon
 .slide .s-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:1cqw;max-width:64%;margin:0 auto}
 .slide .s-tags span{background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.45);border-radius:999px;padding:.8cqw 1.8cqw;font:700 1.5cqw/1.2 var(--display);color:#fff;width:auto!important}
 .slide.cover .s-body > div{width:100%}
+
+/* вопрос в Telegram */
+.ask{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:center;max-width:760px;margin:18px auto 6px}
+.ask-qr{display:block;background:#fff;border-radius:20px;padding:12px;box-shadow:0 14px 30px -20px rgba(26,0,64,.6)}
+.ask-qr svg{display:block;width:100%;height:auto}
+.ask p{margin:0 0 14px}
+.ask-btn{display:inline-flex;align-items:center;gap:10px;background:radial-gradient(circle at 85% 15%,rgba(255,255,255,.3),rgba(255,255,255,0) 50%),var(--bc);color:#fff!important;text-decoration:none;border-radius:999px;padding:13px 24px;font:600 19px "Oswald","Arial Narrow",var(--display);text-transform:uppercase;letter-spacing:.03em;box-shadow:0 12px 24px -16px rgba(26,0,64,.8)}
+.ask-btn:hover{filter:brightness(1.08)}
+.ask-nick{font:700 15px var(--display);color:var(--muted);margin-top:10px!important}
+@media (max-width:640px){.ask{grid-template-columns:1fr;justify-items:center;text-align:center}.ask-qr{width:200px}}
+.slide .s-qr{display:flex;align-items:center;justify-content:center;gap:2.4cqw;margin:0 auto;width:auto!important}
+.slide .s-qr svg{width:calc(var(--k,1)*14cqw);height:auto;background:#fff;border-radius:1.4cqw;padding:.9cqw;box-shadow:0 1.2cqw 2.4cqw -1.4cqw rgba(26,0,64,.7);flex:none}
+.slide .s-qr span{text-align:left;font:600 calc(var(--k,1)*1.9cqw)/1.35 var(--display);color:#fff}
+.slide .s-qr b{display:block;font:600 calc(var(--k,1)*3.2cqw)/1.05 "Oswald","Arial Narrow",var(--display);text-transform:uppercase;color:var(--hl);margin-bottom:.6cqw}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -639,6 +653,7 @@ footer{max-width:1240px;margin:0 auto;padding:0 16px 60px;color:var(--muted);fon
       <li><a href="#b9"><span class="t">11</span><span>Итог и проверка себя</span></a></li>
       <li><a href="#prof"><span class="t">+</span><span>Шпаргалка по профилям</span></a></li>
       <li><a href="#src"><span class="t">+</span><span>Источники</span></a></li>
+      <li><a href="#ask"><span class="t">?</span><span>Задать вопрос</span></a></li>
     </ol>
   </nav>
 
@@ -1292,6 +1307,20 @@ footer{max-width:1240px;margin:0 auto;padding:0 16px 60px;color:var(--muted);fon
   </ul>
   <div class="warn"><p style="margin:0">Ссылки в тексте ведут на полный текст документов в СПС «КонсультантПлюс», на официальном портале правовой информации и в открытых базах судебных решений. Нормативные положения сопоставлены с доступными действующими редакциями на 1 октября 2026 года. Учебные выводы применяются с учётом статуса специалиста и обстоятельств конкретной ситуации. Для индивидуального решения проверяются документы, применимая редакция нормы и фактические обстоятельства. Определения № 309-ЭС19-16052 и № 14-КГ25-11-К1 пересказаны по публикациям правовых систем, полный текст этих актов перед цитированием в документах нужно сверить отдельно.</p></div>
 </section>
+
+<section class="block" id="ask" style="--bc:#6A00E0">
+  <div class="blk-head"><span class="chip" style="background:var(--violet)">Вопросы</span></div>
+  <h2>Остались вопросы? Напишите мне в Telegram</h2>
+  <div class="ask">
+    <a class="ask-qr" href="https://t.me/ElizavetaAnt" target="_blank" rel="noopener"><svg role="img" aria-label="QR-код: задать вопрос в Telegram" viewBox="0 0 37 37" class="segno"><path fill="#fff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#2b1b4a" d="M2 2.5h7m4 0h1m2 0h2m3 0h2m1 0h1m1 0h1m1 0h7m-33 1h1m5 0h1m5 0h1m2 0h2m2 0h2m1 0h1m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h2m1 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h3m1 0h2m2 0h6m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h3m2 0h2m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m2 0h5m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-22 1h1m1 0h1m5 0h2m3 0h1m-22 1h2m1 0h2m2 0h1m3 0h1m2 0h4m3 0h1m4 0h2m-31 1h1m1 0h1m1 0h2m2 0h7m1 0h3m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-31 1h1m2 0h1m2 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h3m2 0h1m1 0h1m-33 1h3m2 0h1m1 0h2m3 0h1m1 0h2m2 0h1m1 0h6m1 0h2m1 0h1m-31 1h1m1 0h1m1 0h3m5 0h1m2 0h2m1 0h1m1 0h2m1 0h6m3 0h1m-33 1h1m1 0h1m6 0h2m1 0h2m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-32 1h1m4 0h4m4 0h1m4 0h3m6 0h1m-28 1h2m1 0h2m2 0h1m1 0h1m1 0h1m2 0h1m1 0h5m5 0h2m1 0h1m1 0h2m-32 1h1m1 0h6m2 0h1m1 0h2m1 0h3m1 0h1m2 0h1m1 0h2m1 0h3m-31 1h1m2 0h1m3 0h3m2 0h1m1 0h4m1 0h4m1 0h1m1 0h4m-30 1h1m3 0h1m1 0h1m1 0h1m1 0h3m2 0h1m1 0h7m1 0h2m1 0h5m-33 1h3m1 0h1m2 0h1m4 0h1m1 0h3m3 0h1m1 0h3m1 0h2m1 0h4m-31 1h3m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h2m3 0h2m1 0h1m1 0h1m1 0h1m-32 1h4m4 0h1m2 0h2m1 0h1m1 0h1m2 0h1m5 0h5m-30 1h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h3m1 0h4m1 0h1m1 0h1m2 0h1m1 0h2m-33 1h1m2 0h2m5 0h1m2 0h3m1 0h2m1 0h1m1 0h1m4 0h1m2 0h1m1 0h1m-33 1h4m2 0h2m1 0h3m2 0h1m6 0h2m1 0h6m1 0h1m-24 1h2m2 0h1m2 0h1m1 0h1m2 0h1m3 0h1m3 0h3m-31 1h7m1 0h2m2 0h2m3 0h6m1 0h1m1 0h1m1 0h1m-29 1h1m5 0h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h1m3 0h2m3 0h4m-32 1h1m1 0h3m1 0h1m1 0h1m1 0h3m5 0h1m2 0h1m1 0h7m1 0h1m-32 1h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h1m3 0h4m2 0h2m1 0h1m1 0h3m-32 1h1m1 0h3m1 0h1m2 0h2m1 0h2m1 0h2m2 0h1m1 0h1m1 0h2m3 0h1m1 0h3m-33 1h1m5 0h1m2 0h1m1 0h1m12 0h1m5 0h3m-33 1h7m4 0h3m2 0h3m1 0h5m1 0h1m1 0h3"/></svg></a>
+    <div>
+      <p>Вопрос по лекции или ситуацию из своей практики можно прислать мне в личные сообщения. Наведите камеру телефона на код или нажмите кнопку.</p>
+      <p>Пожалуйста, описывайте ситуацию без фамилий, точных диагнозов и других сведений, по которым можно узнать ребёнка или семью.</p>
+      <a class="ask-btn" href="https://t.me/ElizavetaAnt" target="_blank" rel="noopener">Задать вопрос в Telegram</a>
+      <p class="ask-nick">@ElizavetaAnt</p>
+    </div>
+  </div>
+</section>
   </main>
 </div>
 
@@ -1340,11 +1369,12 @@ const S = [
  {ill:'shield', bg:'#E4151F', kicker:'Работодатель', title:'Закон работает на защиту <span class="a">и ребёнка, и педагога</span>', list:['Педагога можно уволить и за однократное применение методов воспитания, связанных с физическим или психическим насилием.','Законность основания и соблюдение порядка увольнения доказывает работодатель, поэтому проверка должна опираться на установленные факты.','Педагог вправе обратиться в комиссию по урегулированию споров и требовать справедливого и объективного расследования нарушения норм профессиональной этики.'], norm:'п. 2 ст. 336 ТК · п. 23 Пленума ВС № 2 · ст. 45, 47 273-ФЗ'},
  {ill:'roads', bg:'#E0007F', kicker:'Москва', title:'Если вы работаете <span class="a">в Москве</span>', list:['Закон г. Москвы № 16 гарантирует детям с ограниченными возможностями здоровья приём в государственные образовательные учреждения, а отказ можно обжаловать.','Заключение даёт Центральная ПМПК при Городском психолого-педагогическом центре ДОНМ, основная запись через mos.ru, документы и варианты обращения уточняются в ГППЦ.','О признаках жестокого обращения школы и сады Москвы сообщают незамедлительно, адресатов сверяют с действующим городским регламентом.','Целевой договор: отработка от 3 до 5 лет, а последствия нарушения зависят от даты договора, применимой редакции, переходных положений и приёма в пределах квоты.'], norm:'Закон г. Москвы № 16 · приказ ДОНМ № Пр-205 · регламенты МГКДНиЗП 2015 и 2022 годов · ст. 56, 71.1 273-ФЗ'},
  {ill:'check', bg:'#2A52FF', kicker:'Итог', title:'Семь правил, которые <span class="a">помогут вам в работе</span>', list:['Мы качественно выполняем согласованные действия, обозначаем цели и отслеживаем динамику, а необоснованных гарантий одинакового эффекта не даём.','Семья вправе прекратить занятия, и деньги за непроведённые мы возвращаем, удерживая только подтверждённые расходы.','Работа с ребёнком начинается с договора и письменных согласий родителя, каждое согласие оформлено отдельным документом.','Медицинский диагноз и лечение остаются за врачом, мы описываем наблюдения и даём семье рекомендации.','Фото и видео ребёнка публикуем только с письменного согласия семьи.','На отзыв отвечаем без сведений о ребёнке, а в суд обращаемся только из-за утверждений о фактах, которые не соответствуют действительности.','Об угрозе жизни или здоровью ребёнка сообщаем письменно: в частной практике в орган опеки, в организации руководителю. Если руководитель не передаёт сообщение, личная обязанность сообщить в опеку сохраняется.']},
- {bg:'#8B2CF5', cover:true, kicker:'Спасибо', title:'Ваши вопросы <span class="a">и ситуации из практики</span>', sub:'Текст лекции, таблица правок договора и шпаргалка по профилям остаются у вас в лонгриде, к ним можно возвращаться в любой момент.', norm:'Нормы сопоставлены с редакциями на 1 октября 2026 года'}
+ {bg:'#8B2CF5', cover:true, kicker:'Спасибо', qr:true, title:'Ваши вопросы <span class="a">и ситуации из практики</span>', sub:'Текст лекции, таблица правок договора и шпаргалка по профилям остаются у вас в лонгриде, к ним можно возвращаться в любой момент.', norm:'Нормы сопоставлены с редакциями на 1 октября 2026 года'}
 ];
 const EXTRA={6:'pyramid',9:'check',10:'contract',12:'cabinet',14:'border',18:'ad',20:'review',22:'shield'};
 S.forEach((s,k)=>{if(!s.ill&&EXTRA[k])s.ill=EXTRA[k];});
 S.forEach(s=>{if(!s.cover)s.ill=null;});
+const QR='<svg role="img" aria-label="QR-код: задать вопрос в Telegram" viewBox="0 0 37 37" class="segno"><path fill="#fff" d="M0 0h37v37h-37z"/><path class="qrline" stroke="#2b1b4a" d="M2 2.5h7m4 0h1m2 0h2m3 0h2m1 0h1m1 0h1m1 0h7m-33 1h1m5 0h1m5 0h1m2 0h2m2 0h2m1 0h1m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h2m1 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h3m1 0h2m2 0h6m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h3m2 0h2m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m2 0h5m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-22 1h1m1 0h1m5 0h2m3 0h1m-22 1h2m1 0h2m2 0h1m3 0h1m2 0h4m3 0h1m4 0h2m-31 1h1m1 0h1m1 0h2m2 0h7m1 0h3m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-31 1h1m2 0h1m2 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h3m2 0h1m1 0h1m-33 1h3m2 0h1m1 0h2m3 0h1m1 0h2m2 0h1m1 0h6m1 0h2m1 0h1m-31 1h1m1 0h1m1 0h3m5 0h1m2 0h2m1 0h1m1 0h2m1 0h6m3 0h1m-33 1h1m1 0h1m6 0h2m1 0h2m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-32 1h1m4 0h4m4 0h1m4 0h3m6 0h1m-28 1h2m1 0h2m2 0h1m1 0h1m1 0h1m2 0h1m1 0h5m5 0h2m1 0h1m1 0h2m-32 1h1m1 0h6m2 0h1m1 0h2m1 0h3m1 0h1m2 0h1m1 0h2m1 0h3m-31 1h1m2 0h1m3 0h3m2 0h1m1 0h4m1 0h4m1 0h1m1 0h4m-30 1h1m3 0h1m1 0h1m1 0h1m1 0h3m2 0h1m1 0h7m1 0h2m1 0h5m-33 1h3m1 0h1m2 0h1m4 0h1m1 0h3m3 0h1m1 0h3m1 0h2m1 0h4m-31 1h3m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h2m3 0h2m1 0h1m1 0h1m1 0h1m-32 1h4m4 0h1m2 0h2m1 0h1m1 0h1m2 0h1m5 0h5m-30 1h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h3m1 0h4m1 0h1m1 0h1m2 0h1m1 0h2m-33 1h1m2 0h2m5 0h1m2 0h3m1 0h2m1 0h1m1 0h1m4 0h1m2 0h1m1 0h1m-33 1h4m2 0h2m1 0h3m2 0h1m6 0h2m1 0h6m1 0h1m-24 1h2m2 0h1m2 0h1m1 0h1m2 0h1m3 0h1m3 0h3m-31 1h7m1 0h2m2 0h2m3 0h6m1 0h1m1 0h1m1 0h1m-29 1h1m5 0h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h1m3 0h2m3 0h4m-32 1h1m1 0h3m1 0h1m1 0h1m1 0h3m5 0h1m2 0h1m1 0h7m1 0h1m-32 1h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h1m3 0h4m2 0h2m1 0h1m1 0h3m-32 1h1m1 0h3m1 0h1m2 0h2m1 0h2m1 0h2m2 0h1m1 0h1m1 0h2m3 0h1m1 0h3m-33 1h1m5 0h1m2 0h1m1 0h1m12 0h1m5 0h3m-33 1h7m4 0h3m2 0h3m1 0h5m1 0h1m1 0h3"/></svg>';
 const COLORS_FALLBACK=['#2A52FF','#DA3B00','#00809A','#6A00E0','#0072E0','#E4151F'];
 const el=document.getElementById('slide'), cnt=document.getElementById('d-cnt'), notes=document.getElementById('notes');
 const deck=document.getElementById('deck');
@@ -1366,6 +1396,7 @@ function render(){
   if(s.two) h+='<div class="s-two"><div class="s-card no">'+s.two.no+'</div><div class="s-card yes">'+s.two.yes+'</div></div>';
   if(s.big) h+='<div class="s-big">'+s.big+'</div>';
   if(s.pyr) h+='<div class="s-pyr">'+s.pyr.map((p,k)=>(k?'<i class="ar"></i>':'')+'<div class="lv lv'+(k+1)+'"><b>'+p[0]+'</b><span>'+p[1]+'</span></div>').join('')+'</div>';
+  if(s.qr) h+='<div class="s-qr">'+QR+'<span><b>Задать вопрос</b>в Telegram: @ElizavetaAnt</span></div>';
   if(s.tags) h+='<div class="s-tags">'+s.tags.map(t=>'<span>'+t+'</span>').join('')+'</div>';
   h+='</div>';
   if(s.cover&&s.ill) h+='<svg class="s-ill cov" viewBox="0 0 360 220" aria-hidden="true" style="color:'+BG+'"><use href="#il-'+s.ill+'"/></svg>';
